@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <phpunit
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+  colors="true">
+  <coverage processUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </coverage>
+  <testsuites>
+    <testsuite name="chapter_0">
+      <directory suffix="Test.php">tests/chapter_0_genesis</directory>
+    </testsuite>
+    <testsuite name="chapter_1">
+      <directory suffix="Test.php">tests/chapter_0_genesis</directory>
+      <directory suffix="Test.php">tests/chapter_1_quack_quack</directory>
+    </testsuite>
+    <testsuite name="chapter_2">
+      <directory suffix="Test.php">tests/chapter_0_genesis</directory>
+      <directory suffix="Test.php">tests/chapter_1_quack_quack</directory>
+      <directory suffix="Test.php">tests/chapter_2_learning_to_fly</directory>
+    </testsuite>
+    <testsuite name="chapter_3">
+      <directory suffix="Test.php">tests/chapter_0_genesis</directory>
+      <directory suffix="Test.php">tests/chapter_1_quack_quack</directory>
+      <directory suffix="Test.php">tests/chapter_2_learning_to_fly</directory>
+      <directory suffix="Test.php">tests/chapter_3_more_ducks_please</directory>
+    </testsuite>
+    <testsuite name="chapter_4">
+      <directory suffix="Test.php">tests/chapter_0_genesis</directory>
+      <directory suffix="Test.php">tests/chapter_1_quack_quack</directory>
+      <directory suffix="Test.php">tests/chapter_2_learning_to_fly</directory>
+      <directory suffix="Test.php">tests/chapter_3_more_ducks_please</directory>
+      <directory suffix="Test.php">tests/chapter_4_breaking_the_fourth_wall</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

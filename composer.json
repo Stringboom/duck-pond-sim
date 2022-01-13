@@ -1,0 +1,16 @@
+{
+  "name": "fittinq/duck-pond-simulator",
+  "description": "",
+  "autoload": {
+    "psr-4": {
+      "Fittinq\\DuckPond\\": "src/",
+      "Test\\Fittinq\\DuckPond\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "require": {
+    "php": "^8.0"
+  }
+}
