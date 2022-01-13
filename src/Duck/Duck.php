@@ -2,7 +2,7 @@
 
 namespace Fittinq\DuckPond\Duck;
 
-use  Fittinq\DuckPond\Constants\{ Display, Quack, Swim };
+use  Fittinq\DuckPond\Constants\{ Display, Quack, Swim, Fly };
 
 /**
 * @author     Johan Westermann
@@ -15,6 +15,7 @@ class Duck
     private string $displayDuck;
     private string $swimDuck;
     private string $quackDuck;
+    private string $flyDuck;
 
     public function __construct(array $args) 
     {
@@ -37,6 +38,12 @@ class Duck
             $this->quackDuck = Quack::NO_QUACK;
         }
 
+        if(isset($args["fly"])){
+            $this->flyDuck = $args["fly"];
+        }else{
+            $this->flyDuck = Fly::NO_FLY;
+        }
+
     }
 
     public function display(): string
@@ -52,6 +59,11 @@ class Duck
     public function quack(): string
     {
         return $this->quackDuck;
+    }
+
+    public function fly(): string
+    {
+        return $this->flyDuck;
     }
 
 }

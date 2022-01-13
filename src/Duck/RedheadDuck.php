@@ -2,7 +2,7 @@
 
 namespace Fittinq\DuckPond\Duck;
 
-use  Fittinq\DuckPond\Constants\{ Display, Quack, Swim };
+use  Fittinq\DuckPond\Constants\{ Display, Quack, Swim, Fly };
 
 /**
 * @author     Johan Westermann
@@ -16,6 +16,7 @@ class RedheadDuck extends Duck
         parent::__construct([
             "display" => Display::REDHEAD_DUCK,
             "quack"   => Quack::QUACK_QUACK,
+            "fly"     => Fly::FLAP_FLAP
         ]);
     }
 }
