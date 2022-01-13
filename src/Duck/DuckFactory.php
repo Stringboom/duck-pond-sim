@@ -11,9 +11,12 @@ use UnexpectedValueException;
 */
 class DuckFactory
 {
-    public function letThereBeDuck(string $duck = ''): void 
+    public function letThereBeDuck(string $duck = ''): object 
     {
-        // Add test case later
-        throw new UnexpectedValueException("This duck is not yet known");
+        try {
+            return new $duck;
+        } catch (\Throwable $th) {
+            throw new UnexpectedValueException("This duck is not yet known");
+        }
     }
 }
