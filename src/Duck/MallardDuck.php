@@ -15,8 +15,8 @@ class MallardDuck extends Duck
     {
         parent::__construct([
             "display" => Display::MALLARD,
-            "quack"   => Quack::QUACK_QUACK,
-            "fly"     => Fly::FLAP_FLAP
+            "quack"   => $this->default_quack(),
+            "fly"     => $this->default_flap()
         ]);
     }
 }

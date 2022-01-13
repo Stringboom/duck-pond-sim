@@ -66,4 +66,14 @@ class Duck
         return $this->flyDuck;
     }
 
+    public function default_flap(): string
+    {
+        return Fly::FLAP_FLAP;
+    }
+
+    public function default_quack(): string
+    {
+        return Quack::QUACK_QUACK;
+    }
+
 }
